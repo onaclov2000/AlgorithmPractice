@@ -39,6 +39,7 @@ import sys
 
 def remote_control(word,width):
    from_char = 'a'
+   print word
    for i in list(word):
       directions(i.lower(),from_char,width)
       from_char = i.lower()
@@ -49,22 +50,26 @@ def directions(to_c,from_c,width):
    print str(ord(from_c)) + "->" + str(ord(to_c))
    if to_c == from_c:
       print "Select"
-      return
-   if ord(to_c) > ord(from_c):
+   elif ord(to_c) > ord(from_c):
       (down_count, right_count) = divmod(ord(to_c) - ord(from_c),width)
-      print down_count * "Down ",
-      print right_count * "Right ",
-      print "Select"
+      print down_count * "Down ", right_count * "Right ", "Select"
    else:
       (up_count, left_count) = divmod(ord(from_c) - ord(to_c),width)
-      print up_count * "Up ",
-      print left_count * "Left ",
-      print "Select"
+      print up_count * "Up ", left_count * "Left ", "Select"
    return
 
 if __name__ == "__main__":
    remote_control("TYSONZB",5)
+   
    remote_control("ZYZ",5)
+   
+   remote_control("up",5)
+   
+   remote_control("hello",5)
+   
+   remote_control("movie",5)
+   
+   remote_control("ZZRPG",5)
 
 
 # sample output.
