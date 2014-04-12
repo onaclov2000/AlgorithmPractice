@@ -49,6 +49,7 @@ def directions(to_c,from_c,width):
    print str(ord(from_c)) + "->" + str(ord(to_c))
    if to_c == from_c:
       print "Select"
+      return
    if ord(to_c) > ord(from_c):
       (down_count, right_count) = divmod(ord(to_c) - ord(from_c),width)
       print down_count * "Down ",
@@ -63,7 +64,7 @@ def directions(to_c,from_c,width):
 
 if __name__ == "__main__":
    remote_control("TYSONZB",5)
-   
+   remote_control("ZYZ",5)
 
 
 # sample output.
