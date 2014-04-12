@@ -74,6 +74,7 @@ if __name__ == "__main__":
 
 # sample output.
 #
+#TYSONZB
 #a->t
 #97->116
 #DownDownDown RightRightRightRight Select
