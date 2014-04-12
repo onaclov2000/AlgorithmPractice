@@ -22,6 +22,7 @@
 # 2. Adding new chars will always be in incerasing ordinal value. (since I went a mod and divide route)
 # 3. Adding new chars will follow the 5 per line order I did make it a little more generic, so you pass
 #    in the width
+# 4. All chars are valid chars in the input range (so if  you pass in invalid chars, this will assume they're at the end)
 #
 # Note: if a number is less than 5 away from the next/previous, the program will
 #       default to hitting left or right the number of times.
